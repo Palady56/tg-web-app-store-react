@@ -1,6 +1,10 @@
 import "./App.css"
 import { useEffect } from "react"
 import { useTelegram } from "./Hooks/useTelegram"
+import Header from "./components/Header/Header"
+import { Route, Routes } from "react-router-dom"
+import ProductList from "./components/PropoductList/ProductList.jsx"
+import Form from "./components/Form/Form.jsx"
 
 export default function App() {
 
@@ -12,7 +16,11 @@ export default function App() {
 
   return ( 
     <div className="App">
-      <button onClick={handleOnToggleButton}>Toggle</button>
+      <Header/>
+      <Routes>
+        <Route index element={<ProductList/>}/>
+        <Route path={'form'} element={<Form/>}/>
+      </Routes>
     </div>
   )
 }
