@@ -26,7 +26,7 @@ export default function Form() {
     return() => {
       tg.offEvent("mainButtonClicked", onSendData)
     }
-  }, [])
+  }, [onSendData])
 
   const onChangeCity = (e) => {
     setCity(e.target.value)
