@@ -13,10 +13,13 @@ export default function Form() {
       name,
       city,
       street,
-      subject
+      subject,
     }
+    console.log(data);
     tg.sendData(JSON.stringify(data))
-  }, [])
+    console.log(data);
+    
+  }, [name, city, street, subject])
 
   useEffect(() => {
     tg.onEvent("mainButtonClicked", onSendData)
