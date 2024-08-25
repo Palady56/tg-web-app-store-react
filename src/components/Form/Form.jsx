@@ -61,12 +61,12 @@ export default function Form() {
   }, [name, city, street])
 
   return (
-    <div className='form'>
+    <div className={'form'}>
 
       <h3>Input your credentials</h3>
       <p>To use our online store we need your address</p>
       <input
-        className='input'
+        className={'input'}
         type="text"
         placeholder='Name'
         value={name}
@@ -74,7 +74,7 @@ export default function Form() {
       />
 
       <input
-        className='input'
+        className={'input'}
         type="text"
         placeholder='City'
         value={city}
@@ -82,14 +82,14 @@ export default function Form() {
       />
 
       <input
-        className='input'
+        className={'input'}
         type="text"
         placeholder='Street'
         value={street}
         onChange={onChangeStreet}
       />
 
-      <select value={subject} onChange={onChangeSubject} className='select'>
+      <select value={subject} onChange={onChangeSubject} className={'select'}>
         <option value="physical">Individual</option>
         <option value="legal">Legal entity</option>
       </select>
