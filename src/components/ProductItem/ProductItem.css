@@ -4,14 +4,15 @@
   border: 1px solid var(--tg-theme-button-color);
   padding: 15px;
   width: 170px;
+  gap: 4px;
 }
 
 .img {
-  width: 100%;
-  background: lightgray;
-  height: 100%;
+  width: 140px;
+  background: #000;
+  height: 100px;
   margin: 0 auto;
-  background: var(--tg-theme-button-color);
+  /* background: var(--tg-theme-button-color); */
 }
 
 .description {
